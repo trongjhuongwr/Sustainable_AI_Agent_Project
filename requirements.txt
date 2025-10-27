@@ -1,29 +1,25 @@
-# PyTorch Core (with specific CUDA 12.1 build)
-# Note: Remove '+cu121' if installing for a different CUDA version or CPU
+# === Core Libraries ===
 torch==2.5.1+cu121
-torchvision==0.20.1+cu121
-torchaudio==2.5.1+cu121
-
-# Data Science Stack
 numpy==1.26.4
 scipy==1.13.1
 scikit-learn==1.4.2
 pandas==2.2.2
 
-# Reinforcement Learning
-stable-baselines3[extra]==2.1.0 # Includes gymnasium and other dependencies
-gymnasium==0.29.0 # Explicitly listed, though included in [extra]
+# === Reinforcement Learning ===
+stable-baselines3[extra]==2.1.0
+gymnasium==0.29.0
 
-# Sustainability & Optimization
+# === Model Optimization & Evaluation ===
 codecarbon
 torch-pruning
 ptflops
 
-# Utilities & Plotting
-tqdm
+# === Visualization & Utilities ===
 matplotlib==3.7.2
 seaborn==0.12.2
+tqdm
 
-# Note: tensorflow==2.15.0 was installed in the notebook but appears unused.
-# Remove the line below if TensorFlow is not actually required by your code.
-# tensorflow==2.15.0
+# === Optional (Included in original notebook, check if needed) ===
+# torchvision==0.20.1+cu121 # Likely not needed unless using image data
+# torchaudio==2.5.1+cu121  # Likely not needed unless using audio data
+# tensorflow==2.15.0      # Likely not needed if only using PyTorch

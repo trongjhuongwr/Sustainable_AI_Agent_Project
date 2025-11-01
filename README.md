@@ -24,6 +24,7 @@ The key finding is that the **Agent-Optimized (P30+Q)** strategy, discovered aut
 | **Agent Optimized (P30+Q)** | 0.68641 ± 0.00000 | **0.001705 ± 0.000170** | **0.4076 ± 0.0194** | 0.0000\*\* | 0.0000\*\* |
 
 *\*Note: `ptflops` does not account for unstructured sparsity, so these values are unchanged from the baseline.*
+
 *\*\*Note: `ptflops` fails to analyze quantized operations and incorrectly reports 0.0, highlighting the failure of this proxy metric.*
 
 **Conclusions from the data:**

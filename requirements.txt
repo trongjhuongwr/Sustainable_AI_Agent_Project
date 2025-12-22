@@ -20,6 +20,7 @@ seaborn==0.12.2
 tqdm
 
 # === Optional (Included in original notebook, check if needed) ===
+optuna
 # torchvision==0.20.1+cu121 # Likely not needed unless using image data
 # torchaudio==2.5.1+cu121  # Likely not needed unless using audio data
 # tensorflow==2.15.0      # Likely not needed if only using PyTorch
